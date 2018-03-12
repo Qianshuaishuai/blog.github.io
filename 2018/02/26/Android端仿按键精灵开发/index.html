@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;前言：心血来潮，想开始写blog，来记录整理自己所学所闻。经同事介绍利用Hexo+Github的博客系统形式来进行管理书写，但在配置上遇到不少坑，所以总结下。 &amp;emsp;&amp;emsp;其实网上现成的教程攻略特别多，所以推荐两份较为详细的攻略来参考，再总结自己遇到的问题  https://www.jianshu.com/p/834d7cc0668d 里面搭建的每个步骤都写的十">
+<meta name="description" content="前言：&amp;nsbp;&amp;nsbp;这两天朋友想做手游方面的辅助来测试，听了需求分析后，大体确定是为这款游戏做一版定制版本的按键精灵，觉得蛮有学习意义，所以记录下来 技术选型：&amp;nsbp;&amp;nsbp;因为android是老本行，所以既然有现有的api那就直接在android平台上开发了，但经过一番了解MotionEvent非常容易上手接入，但局限是不能跨平台。最后发现只能通过Instrumentatio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo + Github 搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2018/02/25/Hexo-Github-搭建个人博客/index.html">
+<meta property="og:title" content="Android端仿按键精灵开发">
+<meta property="og:url" content="http://yoursite.com/2018/02/26/Android端仿按键精灵开发/index.html">
 <meta property="og:site_name" content="Qian&#39;s Note">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;前言：心血来潮，想开始写blog，来记录整理自己所学所闻。经同事介绍利用Hexo+Github的博客系统形式来进行管理书写，但在配置上遇到不少坑，所以总结下。 &amp;emsp;&amp;emsp;其实网上现成的教程攻略特别多，所以推荐两份较为详细的攻略来参考，再总结自己遇到的问题  https://www.jianshu.com/p/834d7cc0668d 里面搭建的每个步骤都写的十">
-<meta property="og:updated_time" content="2018-02-25T07:48:19.000Z">
+<meta property="og:description" content="前言：&amp;nsbp;&amp;nsbp;这两天朋友想做手游方面的辅助来测试，听了需求分析后，大体确定是为这款游戏做一版定制版本的按键精灵，觉得蛮有学习意义，所以记录下来 技术选型：&amp;nsbp;&amp;nsbp;因为android是老本行，所以既然有现有的api那就直接在android平台上开发了，但经过一番了解MotionEvent非常容易上手接入，但局限是不能跨平台。最后发现只能通过Instrumentatio">
+<meta property="og:updated_time" content="2018-03-12T06:12:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo + Github 搭建个人博客">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;前言：心血来潮，想开始写blog，来记录整理自己所学所闻。经同事介绍利用Hexo+Github的博客系统形式来进行管理书写，但在配置上遇到不少坑，所以总结下。 &amp;emsp;&amp;emsp;其实网上现成的教程攻略特别多，所以推荐两份较为详细的攻略来参考，再总结自己遇到的问题  https://www.jianshu.com/p/834d7cc0668d 里面搭建的每个步骤都写的十">
+<meta name="twitter:title" content="Android端仿按键精灵开发">
+<meta name="twitter:description" content="前言：&amp;nsbp;&amp;nsbp;这两天朋友想做手游方面的辅助来测试，听了需求分析后，大体确定是为这款游戏做一版定制版本的按键精灵，觉得蛮有学习意义，所以记录下来 技术选型：&amp;nsbp;&amp;nsbp;因为android是老本行，所以既然有现有的api那就直接在android平台上开发了，但经过一番了解MotionEvent非常容易上手接入，但局限是不能跨平台。最后发现只能通过Instrumentatio">
 
 
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/25/Hexo-Github-搭建个人博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/26/Android端仿按键精灵开发/"/>
 
 
 
 
 
-  <title>Hexo + Github 搭建个人博客 | Qian's Note</title>
+  <title>Android端仿按键精灵开发 | Qian's Note</title>
   
 
 
@@ -231,7 +231,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/25/Hexo-Github-搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/Android端仿按键精灵开发/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Qian Dashuai">
@@ -248,7 +248,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo + Github 搭建个人博客</h1>
+          <h1 class="post-title" itemprop="name headline">Android端仿按键精灵开发</h1>
         
 
         <div class="post-meta">
@@ -260,8 +260,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-25T15:09:54+08:00">
-                2018-02-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-26T16:16:59+08:00">
+                2018-02-26
               </time>
             
 
@@ -298,14 +298,13 @@
       
 
       
-        <p>&emsp;&emsp;前言：心血来潮，想开始写blog，来记录整理自己所学所闻。经同事介绍利用Hexo+Github的博客系统形式来进行管理书写，但在配置上遇到不少坑，所以总结下。</p>
-<p>&emsp;&emsp;其实网上现成的教程攻略特别多，所以推荐两份较为详细的攻略来参考，再总结自己遇到的问题</p>
-<blockquote>
-<p><a href="https://www.jianshu.com/p/834d7cc0668d" target="_blank" rel="noopener">https://www.jianshu.com/p/834d7cc0668d</a> 里面搭建的每个步骤都写的十分详细了</p>
-</blockquote>
-<h2 id="总结问题："><a href="#总结问题：" class="headerlink" title="总结问题："></a>总结问题：</h2><p>&emsp;&emsp;1.配置Github的ssh key的时候，如果使用的电脑正好有公司的相关key，记得分清楚，不要混淆</p>
-<p>&emsp;&emsp;2.再配置Hexo的_config.yml文件时，主要脚本语言的书写规范（特别执行的命令冒号后要记得空一行！！！）</p>
-<p>&emsp;&emsp;3.域名购买的选择，如果不嫌备案麻烦可以买国内一些知名的代理商旗下的，如果嫌麻烦，那老老实实用Godaddy去买，挺方便（吐槽下：这个网站交互相当不友好！！！），然后利用DNSPod去设置dns配合使用就基本ok啦！</p>
+        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>&nsbp;&nsbp;这两天朋友想做手游方面的辅助来测试，听了需求分析后，大体确定是为这款游戏做一版定制版本的按键精灵，觉得蛮有学习意义，所以记录下来</p>
+<h2 id="技术选型："><a href="#技术选型：" class="headerlink" title="技术选型："></a>技术选型：</h2><p>&nsbp;&nsbp;因为android是老本行，所以既然有现有的api那就直接在android平台上开发了，但经过一番了解MotionEvent非常容易上手接入，但局限是不能跨平台。最后发现只能通过Instrumentation的方式去发送所需要模拟的触屏事件（满足我们需要的可以跨进程模拟事件），但前提是要拥有root权限。</p>
+<p>&nsbp;&nsbp;自己本身算是一个资深的游戏玩家，也接触过pc端的网游辅助，所以结合自身体验来去完善功能。</p>
+<h2 id="技术难点："><a href="#技术难点：" class="headerlink" title="技术难点："></a>技术难点：</h2><p>1.要做到屏幕适配，最好是常规尺寸都做好一份坐标点。然后做这几套常规适配，并且计算好对应的比例尺。基本可以满足在大部分机型上的运行</p>
+<p>2.因为按键精灵的需求肯定会需要新线程的机制不断去发送请求模仿按键，对于线程的管理就尤为重要，非常建议采用单例模式来管理线程的实例对象。并且是通过service在后台来管理程序的运行状态，记录整套按键流程，用shareprefence记录当前的按键状态，以防程序被杀死后还可以再次重启服务按照上一步的流程继续运行。大大提升效率。</p>
+<p>3.目前程序是加入android.mk文件在android系统环境生成的apk申请的权限（跨进程），如果有不需要这样麻烦的编译过程可以分享一下。目前自己还没找到</p>
+<p>4.按键精灵里有很多反复操作的功能，书写一定可复用率的api及其重要，一来减少代码的臃肿，二来一出错也非常好改。</p>
 
       
     </div>
@@ -330,14 +329,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/02/25/Hexo-Github-搭建个人博客/" rel="next" title="Hexo + Github 搭建个人博客">
+                <i class="fa fa-chevron-left"></i> Hexo + Github 搭建个人博客
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/26/Android端仿按键精灵开发/" rel="prev" title="Android端仿按键精灵开发">
-                Android端仿按键精灵开发 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/02/Untitled/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -452,7 +455,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总结问题："><span class="nav-number">1.</span> <span class="nav-text">总结问题：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术选型："><span class="nav-number">2.</span> <span class="nav-text">技术选型：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术难点："><span class="nav-number">3.</span> <span class="nav-text">技术难点：</span></a></li></ol></div>
             
 
           </div>
