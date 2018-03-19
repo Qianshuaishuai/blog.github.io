@@ -79,15 +79,16 @@
 
 
 
-<meta name="description" content="Record the bits and pieces of learning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Qian&#39;s Note">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="前言：&amp;emsp;&amp;emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！ 初步归纳：Tensorflow框架的核心思想： &amp;em">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tensorflow的初步了解">
+<meta property="og:url" content="http://yoursite.com/2018/03/19/tensorflow的初步了解/index.html">
 <meta property="og:site_name" content="Qian&#39;s Note">
-<meta property="og:description" content="Record the bits and pieces of learning">
+<meta property="og:description" content="前言：&amp;emsp;&amp;emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！ 初步归纳：Tensorflow框架的核心思想： &amp;em">
+<meta property="og:updated_time" content="2018-03-19T11:55:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Qian&#39;s Note">
-<meta name="twitter:description" content="Record the bits and pieces of learning">
+<meta name="twitter:title" content="tensorflow的初步了解">
+<meta name="twitter:description" content="前言：&amp;emsp;&amp;emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！ 初步归纳：Tensorflow框架的核心思想： &amp;em">
 
 
 
@@ -117,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/19/tensorflow的初步了解/"/>
 
 
 
 
 
-  <title>Qian's Note</title>
+  <title>tensorflow的初步了解 | Qian's Note</title>
   
 
 
@@ -142,8 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +216,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +248,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/19/tensorflow的初步了解/" itemprop="url">tensorflow的初步了解</a></h1>
+          <h1 class="post-title" itemprop="name headline">tensorflow的初步了解</h1>
         
 
         <div class="post-meta">
@@ -300,9 +298,7 @@
       
 
       
-        
-          
-            <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>&emsp;&emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！</p>
+        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>&emsp;&emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！</p>
 <h2 id="初步归纳："><a href="#初步归纳：" class="headerlink" title="初步归纳："></a>初步归纳：</h2><p>Tensorflow框架的核心思想：</p>
 <p>&emsp;&emsp;1.先预设初步的算法推导（目标值y与每个参数之间的权重和偏差关系）</p>
 <p>&emsp;&emsp;2.准备大量数据（一般都是数据越多训练效果越好）以及一台cpu配置较好的电脑 </p>
@@ -310,8 +306,6 @@
 <p>&emsp;&emsp;4.利用新数据对机器的训练状况进行测试，如果输出符合预想（容错率看需求）那机器已经学习达到我们想要的水平，如果没符合，那需要继续调试。</p>
 <h2 id="感想："><a href="#感想：" class="headerlink" title="感想："></a>感想：</h2><p>&emsp;&emsp;第一次接触这样的东西，觉得蛮有意思，本身因为公司的需求，学习了不少语言和别的方向开发，都觉得较容易上手，而这个模块真正接触发现学习还是蛮困难，也因为之前有用pyhton进行数据爬取加上这门语言大火所以是选了python这门语言进行学习。在api的格式和复杂程度上，加上都是英文文档，学习难度确实较高。</p>
 
-          
-        
       
     </div>
     
@@ -328,138 +322,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/05/Android端仿按键精灵开发/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Qian Dashuai">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Qian's Note">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/05/Android端仿按键精灵开发/" itemprop="url">Android端仿按键精灵开发</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-05T16:16:59+08:00">
-                2018-03-05
-              </time>
+              <a href="/2018/03/05/Android端仿按键精灵开发/" rel="next" title="Android端仿按键精灵开发">
+                <i class="fa fa-chevron-left"></i> Android端仿按键精灵开发
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>&emsp;&emsp;这两天朋友想做手游方面的辅助来测试，听了需求分析后，大体确定是为这款游戏做一版定制版本的按键精灵，觉得蛮有学习意义，所以记录下来</p>
-<h2 id="技术选型："><a href="#技术选型：" class="headerlink" title="技术选型："></a>技术选型：</h2><p>&emsp;&emsp;因为android是老本行，所以既然有现有的api那就直接在android平台上开发了，但经过一番了解MotionEvent非常容易上手接入，但局限是不能跨平台。最后发现只能通过Instrumentation的方式去发送所需要模拟的触屏事件（满足我们需要的可以跨进程模拟事件），但前提是要拥有root权限。</p>
-<p>&emsp;&emsp;自己本身算是一个资深的游戏玩家，也接触过pc端的网游辅助，所以结合自身体验来去完善功能。</p>
-<h2 id="技术难点："><a href="#技术难点：" class="headerlink" title="技术难点："></a>技术难点：</h2><p>&emsp;&emsp;1.要做到屏幕适配，最好是常规尺寸都做好一份坐标点。然后做这几套常规适配，并且计算好对应的比例尺。基本可以满足在大部分机型上的运行</p>
-<p>&emsp;&emsp;2.因为按键精灵的需求肯定会需要新线程的机制不断去发送请求模仿按键，对于线程的管理就尤为重要，非常建议采用单例模式来管理线程的实例对象。并且是通过service在后台来管理程序的运行状态，记录整套按键流程，用shareprefence记录当前的按键状态，以防程序被杀死后还可以再次重启服务按照上一步的流程继续运行。大大提升效率。</p>
-<p>&emsp;&emsp;3.目前程序是加入android.mk文件在android系统环境生成的apk申请的权限（跨进程），如果有不需要这样麻烦的编译过程可以分享一下。目前自己还没找到</p>
-<p>&emsp;&emsp;4.按键精灵里有很多反复操作的功能，书写一定可复用率的api及其重要，一来减少代码的臃肿，二来一出错也非常好改。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -469,137 +353,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/25/Hexo-Github-搭建个人博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Qian Dashuai">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Qian's Note">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/25/Hexo-Github-搭建个人博客/" itemprop="url">Hexo + Github 搭建个人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-25T15:09:54+08:00">
-                2018-02-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>&emsp;&emsp;前言：心血来潮，想开始写blog，来记录整理自己所学所闻。经同事介绍利用Hexo+Github的博客系统形式来进行管理书写，但在配置上遇到不少坑，所以总结下。</p>
-<p>&emsp;&emsp;其实网上现成的教程攻略特别多，所以推荐两份较为详细的攻略来参考，再总结自己遇到的问题</p>
-<blockquote>
-<p><a href="https://www.jianshu.com/p/834d7cc0668d" target="_blank" rel="noopener">https://www.jianshu.com/p/834d7cc0668d</a> 里面搭建的每个步骤都写的十分详细了</p>
-</blockquote>
-<h2 id="总结问题："><a href="#总结问题：" class="headerlink" title="总结问题："></a>总结问题：</h2><p>&emsp;&emsp;1.配置Github的ssh key的时候，如果使用的电脑正好有公司的相关key，记得分清楚，不要混淆</p>
-<p>&emsp;&emsp;2.再配置Hexo的_config.yml文件时，主要脚本语言的书写规范（特别执行的命令冒号后要记得空一行！！！）</p>
-<p>&emsp;&emsp;3.域名购买的选择，如果不嫌备案麻烦可以买国内一些知名的代理商旗下的，如果嫌麻烦，那老老实实用Godaddy去买，挺方便（吐槽下：这个网站交互相当不友好！！！），然后利用DNSPod去设置dns配合使用就基本ok啦！</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -607,6 +365,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -627,8 +389,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -670,6 +441,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步归纳："><span class="nav-number">2.</span> <span class="nav-text">初步归纳：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感想："><span class="nav-number">3.</span> <span class="nav-text">感想：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -803,6 +590,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
