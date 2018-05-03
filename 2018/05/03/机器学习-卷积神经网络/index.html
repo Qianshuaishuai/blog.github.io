@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="前言：&amp;emsp;&amp;emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！ 初步归纳：Tensorflow框架的核心思想： &amp;em">
+<meta name="description" content="&amp;emsp;&amp;emsp;零零散散学习机器学习有一段时间了，从跑简单的demo到看复杂的api，了解基本的矩阵运算到现在拿公司爬取的猿题库数据来做分类器。 &amp;emsp;&amp;emsp;经过查阅资料，发现卷积神经网络在处理自然语言NLP方面有独特的奇效，并且上手思路很简单，即使计算过程较为复杂，但tensorflow框架已把计算需要调度的api封装的非常简单，即使矩阵运算掌握不是很好，但了解核心思想也能完">
 <meta property="og:type" content="article">
-<meta property="og:title" content="tensorflow的初步了解">
-<meta property="og:url" content="http://yoursite.com/2018/03/19/tensorflow的初步了解/index.html">
+<meta property="og:title" content="机器学习-卷积神经网络">
+<meta property="og:url" content="http://yoursite.com/2018/05/03/机器学习-卷积神经网络/index.html">
 <meta property="og:site_name" content="Qian&#39;s Note">
-<meta property="og:description" content="前言：&amp;emsp;&amp;emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！ 初步归纳：Tensorflow框架的核心思想： &amp;em">
-<meta property="og:updated_time" content="2018-03-19T11:55:56.000Z">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;零零散散学习机器学习有一段时间了，从跑简单的demo到看复杂的api，了解基本的矩阵运算到现在拿公司爬取的猿题库数据来做分类器。 &amp;emsp;&amp;emsp;经过查阅资料，发现卷积神经网络在处理自然语言NLP方面有独特的奇效，并且上手思路很简单，即使计算过程较为复杂，但tensorflow框架已把计算需要调度的api封装的非常简单，即使矩阵运算掌握不是很好，但了解核心思想也能完">
+<meta property="og:updated_time" content="2018-05-03T08:01:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tensorflow的初步了解">
-<meta name="twitter:description" content="前言：&amp;emsp;&amp;emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！ 初步归纳：Tensorflow框架的核心思想： &amp;em">
+<meta name="twitter:title" content="机器学习-卷积神经网络">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;零零散散学习机器学习有一段时间了，从跑简单的demo到看复杂的api，了解基本的矩阵运算到现在拿公司爬取的猿题库数据来做分类器。 &amp;emsp;&amp;emsp;经过查阅资料，发现卷积神经网络在处理自然语言NLP方面有独特的奇效，并且上手思路很简单，即使计算过程较为复杂，但tensorflow框架已把计算需要调度的api封装的非常简单，即使矩阵运算掌握不是很好，但了解核心思想也能完">
 
 
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/19/tensorflow的初步了解/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/03/机器学习-卷积神经网络/"/>
 
 
 
 
 
-  <title>tensorflow的初步了解 | Qian's Note</title>
+  <title>机器学习-卷积神经网络 | Qian's Note</title>
   
 
 
@@ -231,7 +231,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/tensorflow的初步了解/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/03/机器学习-卷积神经网络/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Qian Dashuai">
@@ -248,7 +248,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">tensorflow的初步了解</h1>
+          <h1 class="post-title" itemprop="name headline">机器学习-卷积神经网络</h1>
         
 
         <div class="post-meta">
@@ -260,8 +260,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-19T19:20:11+08:00">
-                2018-03-19
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-03T15:15:16+08:00">
+                2018-05-03
               </time>
             
 
@@ -298,13 +298,18 @@
       
 
       
-        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>&emsp;&emsp;由于公司的项目需求，需要介入利用机器学习来完成一些数据上的处理，和leader看了不少资料，发现Tensorflow是现阶段最适合我们来学习的框架，封装简单，思路模式很清晰，封装了c++，go，python，java四门语言的api。最重要的是它是我学习开发以来最熟悉的谷歌推出的框架，所以毫无疑问的选择它啦！！！</p>
-<h2 id="初步归纳："><a href="#初步归纳：" class="headerlink" title="初步归纳："></a>初步归纳：</h2><p>Tensorflow框架的核心思想：</p>
-<p>&emsp;&emsp;1.先预设初步的算法推导（目标值y与每个参数之间的权重和偏差关系）</p>
-<p>&emsp;&emsp;2.准备大量数据（一般都是数据越多训练效果越好）以及一台cpu配置较好的电脑 </p>
-<p>&emsp;&emsp;3.创建Session对象，利用预置数据对它进行训练（会配置很多参数，都是为了训练过程中让机器输出的结果更接近我们预想）</p>
-<p>&emsp;&emsp;4.利用新数据对机器的训练状况进行测试，如果输出符合预想（容错率看需求）那机器已经学习达到我们想要的水平，如果没符合，那需要继续调试。</p>
-<h2 id="感想："><a href="#感想：" class="headerlink" title="感想："></a>感想：</h2><p>&emsp;&emsp;第一次接触这样的东西，觉得蛮有意思，本身因为公司的需求，学习了不少语言和别的方向开发，都觉得较容易上手，而这个模块真正接触发现学习还是蛮困难，也因为之前有用pyhton进行数据爬取加上这门语言大火所以是选了python这门语言进行学习。在api的格式和复杂程度上，加上都是英文文档，学习难度确实较高。</p>
+        <p>&emsp;&emsp;零零散散学习机器学习有一段时间了，从跑简单的demo到看复杂的api，了解基本的矩阵运算到现在拿公司爬取的猿题库数据来做分类器。</p>
+<p>&emsp;&emsp;经过查阅资料，发现卷积神经网络在处理自然语言NLP方面有独特的奇效，并且上手思路很简单，即使计算过程较为复杂，但tensorflow框架已把计算需要调度的api封装的非常简单，即使矩阵运算掌握不是很好，但了解核心思想也能完成一个理想的机器学习demo。</p>
+<blockquote>
+<p><a href="https://www.csdn.net/article/2015-11-11/2826192" target="_blank" rel="noopener">https://www.csdn.net/article/2015-11-11/2826192</a> 这篇文章简单介绍了几个典型的卷积神经网络处理NLP的例子</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h2 id="卷积神经网络处理NLP的通用思路（例如英文句子分组例子）"><a href="#卷积神经网络处理NLP的通用思路（例如英文句子分组例子）" class="headerlink" title="卷积神经网络处理NLP的通用思路（例如英文句子分组例子）"></a>卷积神经网络处理NLP的通用思路（例如英文句子分组例子）</h2><p>&emsp;&emsp;1.先把英文句子拆成每个单词，把所有需要训练的英文句子都拆分成单词，然后总结出词频和按词频大小顺序排列，做成一份单词向量表</p>
+<p>&emsp;&emsp;2.获得所有英文句子中，单词量最长的，以此来作为维度计算中的最长长度（最好以2的次方数来计算），不足长度的后面以0补充</p>
+<p>&emsp;&emsp;3.设置卷积核（一般卷积核的长度为句子最长单词长度的一半左右浮动，根据自己需求设置），然后计算卷积运算</p>
+<p>&emsp;&emsp;4.把上述得到的计算结果进行最大池化，再进行需求分类，这就是基本运算过程。</p>
+<p>&emsp;&emsp;5.先把预先要做训练的数据做一定的处理，然后丢在上述的模型进行不断训练（这过程注意调整loss，最后用tensorboard图表观察学习情况），建议在学习过程中以一定次数为基准不断保存训练模型，以避免发生意外中途断了丢失训练数据，也方便训练完后，可以直接启用模型来进行测试</p>
+<p>&emsp;&emsp;6.当训练完时，就可以不断利用模型进行测试啦，不过可能会出现过拟合的情况，也要处理下。然后不断调参来让准确率提高。</p>
+<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>&emsp;&emsp;感受到了AI的魅力所在，也发现了她的前景美好。希望能有机会继续深究学习</p>
 
       
     </div>
@@ -329,8 +334,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/05/Android端仿按键精灵开发/" rel="next" title="Android端仿按键精灵开发">
-                <i class="fa fa-chevron-left"></i> Android端仿按键精灵开发
+              <a href="/2018/03/19/tensorflow的初步了解/" rel="next" title="tensorflow的初步了解">
+                <i class="fa fa-chevron-left"></i> tensorflow的初步了解
               </a>
             
           </div>
@@ -338,10 +343,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/03/机器学习-卷积神经网络/" rel="prev" title="机器学习-卷积神经网络">
-                机器学习-卷积神经网络 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -455,7 +456,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步归纳："><span class="nav-number">2.</span> <span class="nav-text">初步归纳：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感想："><span class="nav-number">3.</span> <span class="nav-text">感想：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷积神经网络处理NLP的通用思路（例如英文句子分组例子）"><span class="nav-number">2.</span> <span class="nav-text">卷积神经网络处理NLP的通用思路（例如英文句子分组例子）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感想"><span class="nav-number">3.</span> <span class="nav-text">感想</span></a></li></ol></div>
             
 
           </div>

@@ -231,6 +231,137 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/03/机器学习-卷积神经网络/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Qian Dashuai">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qian's Note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/03/机器学习-卷积神经网络/" itemprop="url">机器学习-卷积神经网络</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-03T15:15:16+08:00">
+                2018-05-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&emsp;&emsp;零零散散学习机器学习有一段时间了，从跑简单的demo到看复杂的api，了解基本的矩阵运算到现在拿公司爬取的猿题库数据来做分类器。</p>
+<p>&emsp;&emsp;经过查阅资料，发现卷积神经网络在处理自然语言NLP方面有独特的奇效，并且上手思路很简单，即使计算过程较为复杂，但tensorflow框架已把计算需要调度的api封装的非常简单，即使矩阵运算掌握不是很好，但了解核心思想也能完成一个理想的机器学习demo。</p>
+<blockquote>
+<p><a href="https://www.csdn.net/article/2015-11-11/2826192" target="_blank" rel="noopener">https://www.csdn.net/article/2015-11-11/2826192</a> 这篇文章简单介绍了几个典型的卷积神经网络处理NLP的例子</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h2 id="卷积神经网络处理NLP的通用思路（例如英文句子分组例子）"><a href="#卷积神经网络处理NLP的通用思路（例如英文句子分组例子）" class="headerlink" title="卷积神经网络处理NLP的通用思路（例如英文句子分组例子）"></a>卷积神经网络处理NLP的通用思路（例如英文句子分组例子）</h2><p>&emsp;&emsp;1.先把英文句子拆成每个单词，把所有需要训练的英文句子都拆分成单词，然后总结出词频和按词频大小顺序排列，做成一份单词向量表</p>
+<p>&emsp;&emsp;2.获得所有英文句子中，单词量最长的，以此来作为维度计算中的最长长度（最好以2的次方数来计算），不足长度的后面以0补充</p>
+<p>&emsp;&emsp;3.设置卷积核（一般卷积核的长度为句子最长单词长度的一半左右浮动，根据自己需求设置），然后计算卷积运算</p>
+<p>&emsp;&emsp;4.把上述得到的计算结果进行最大池化，再进行需求分类，这就是基本运算过程。</p>
+<p>&emsp;&emsp;5.先把预先要做训练的数据做一定的处理，然后丢在上述的模型进行不断训练（这过程注意调整loss，最后用tensorboard图表观察学习情况），建议在学习过程中以一定次数为基准不断保存训练模型，以避免发生意外中途断了丢失训练数据，也方便训练完后，可以直接启用模型来进行测试</p>
+<p>&emsp;&emsp;6.当训练完时，就可以不断利用模型进行测试啦，不过可能会出现过拟合的情况，也要处理下。然后不断调参来让准确率提高。</p>
+<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>&emsp;&emsp;感受到了AI的魅力所在，也发现了她的前景美好。希望能有机会继续深究学习</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/tensorflow的初步了解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -643,7 +774,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
