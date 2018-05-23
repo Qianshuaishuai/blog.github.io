@@ -231,6 +231,252 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/17/机器学习-循环神经网络/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Qian Dashuai">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qian's Note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/17/机器学习-循环神经网络/" itemprop="url">机器学习-循环神经网络</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-17T19:53:23+08:00">
+                2018-05-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/机器学习-卷积神经网络（2）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Qian Dashuai">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qian's Note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/机器学习-卷积神经网络（2）/" itemprop="url">机器学习-卷积神经网络（2）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-15T10:47:37+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&emsp;&emsp;最近leader有在催数据处理的情况，之前觉得该需求不太符合机器学习的场景，但自己改了下需求，当跑demo自己尝试看效果如何</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h2 id="卷积神经网络处理NLP优化卷积和池化过程"><a href="#卷积神经网络处理NLP优化卷积和池化过程" class="headerlink" title="卷积神经网络处理NLP优化卷积和池化过程"></a>卷积神经网络处理NLP优化卷积和池化过程</h2><p>&emsp;&emsp;1.关于分词的处理和前面一篇一样，采用jieba库高校分词。</p>
+<p>&emsp;&emsp;2.核心在于卷积过程的优化，前面一篇文章介绍，只是简单采用一层【3，4，5】层，做三组卷积，然后抽取128个通道的最大池化层再把三层都链接一起再全连接结果数。</p>
+<p>&emsp;&emsp;但因为分词出来发现不少题目的分词数高达1000多长度，如果直接卷积计算，识别会导致计算机高负荷，效果也会大打折扣。所以再进行计算前，需对分词过程做下处理</p>
+<p>&emsp;&emsp;这里先统计每个分词在总词表占有的比例，通过筛选淘汰比例低的分词来降低矩阵的长度。</p>
+<p>&emsp;&emsp;然后在卷积层时候多做一层卷积和池化来更加细化提取特征。</p>
+<p>&emsp;&emsp;3.这次的调试还加入了TensorBoard来记录scalar和histgorm，监督学习情况</p>
+<h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>&emsp;&emsp;总的来说，机器学习的开发中，多数时间还是调参和跑数据。要花较多的心思和精力去理解机器学习许多概念和理论。和传统的学习敲代码还是有不少不同。最重要的是python的缩紧验证特别烦！！！！！如果不在ide环境下开发，别的编辑器很容易出现缩进混乱问题！不过总的来说，ai的学习还是蛮有趣的！</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/03/机器学习-卷积神经网络/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -774,7 +1020,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
